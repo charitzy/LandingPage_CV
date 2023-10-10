@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif ;
+}
+/* Resetting margins and paddings */
+
+
+.img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px outset #4B0082;
+    animation: bounce 3.5s infinite; 
+
+}
+.img-fluid{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+nav{
+    background: linear-gradient(to right, #4B0082, #ffffff);
+}
+
+section{
+    background: linear-gradient(to right,  #41016f, #c37ec3);
+}
+
+footer{
+    background: linear-gradient(to right,  #41016fb0, #c37ec3a2);
+}
+
+.border {
+    background: linear-gradient(to right,  #41016f5d, #c37ec31d);
+    animation: bounce 3s infinite;
+    border-style: hidden
+}
+
+
+.border:hover {
+    animation: none;
+    transform: scale(1.05); 
+    transition: transform 0.4s ease; /*  transition */
+}
+
+.shadow-effect{
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 8px rgba(0, 0, 0, 0.582);
+}
+
+.shadow-effect2{
+    transition: all 0.5s;
+}
+
+.shadow-effect2:hover{
+    box-shadow: -6px 6px 0 8px rgba(205, 77, 212, 0.582);
+}
+
+h1 {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5.5s steps(40, end) infinite, blink-caret 0.9s step-end infinite;
+}
+h1:hover{
+    color: yellow;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* Define blinking cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #ff5733; /* Change the color on hover */
+}
+/* navbar hover */
+.navbar-nav li.nav-item a.nav-link {
+    transition: transform 0.3s; /* Add a transition for smooth animation */
+    
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    transform: translateY(-5px); /* Apply a small vertical translation on hover */
+    
+}
+
+
+.bounce{
+    animation: wave 3.5s ease infinite;
+
+}
+
+.wooble{
+    animation: wobble 3.5s ease infinite;
+}
+
+@keyframes wobble {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(-5deg);
+    }
+    30% {
+      transform: rotate(3deg);
+    }
+    45% {
+      transform: rotate(-3deg);
+    }
+    60% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+  
+
+/* Define the animation keyframes for the bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.project-item {
+    animation: bounce 3.5s ease infinite; /* Apply the bounce animation */
+}
+
+.project-item:hover {
+    animation: none; /* Disable the animation on hover */
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+/* service */
+.skill-mf span {
+    color: #4e4e4e;
+  }
+  
+  .skill-mf .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+  }
+  
+  .skill-mf .progress .progress-bar {
+    height: 0.7rem;
+    background-color: rgb(93, 194, 93);
+  }
+/* end */
